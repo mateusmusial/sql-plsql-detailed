@@ -14,7 +14,7 @@ begin
      bulk collect into t_employees
      from employees
     order by employee_id;
-    
+
     dbms_output.put_line('Número de elementos: ' || t_employees.count);
 
    <<imprime_valores>>

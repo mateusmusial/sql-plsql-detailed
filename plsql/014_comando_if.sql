@@ -29,7 +29,7 @@ begin
     where department_id = l_department_id;
 
    dbms_output.put_line('Número de empregados atualizados: ' || sql%rowcount);
-   
+
    commit;
 end;
 
@@ -57,6 +57,6 @@ begin
     where department_id = l_department_id;
 
    dbms_output.put_line('Número de empregados atualizados: ' || sql%rowcount);
-   
+
    commit;
 end;

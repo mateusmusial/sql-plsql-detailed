@@ -29,6 +29,6 @@ begin
     , 0.4
     , 103
     , 60);
-    
+
     commit;
 end;

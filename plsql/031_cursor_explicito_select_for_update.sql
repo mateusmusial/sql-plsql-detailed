@@ -20,7 +20,7 @@ begin
       update employees
          set salary = salary * (1 + 10 / 100)
        where current of c_employees;
-       
+
       dbms_output.put_line('Número de empregados atualizados: ' || c_employees%rowcount);
    end loop update_salary;
 end;

@@ -7,6 +7,6 @@ declare
 begin
    delete from employees
     where employee_id = l_employee_id;
-   
+
    commit;
 end;
