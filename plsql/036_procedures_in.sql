@@ -19,7 +19,7 @@ end emp_salary_increase;
 -- Executando a Procedure
 set serveroutput on;
 begin
-   up_salary(210, 10);
+   emp_salary_increase(210, 10);
    commit;
 end;
 
