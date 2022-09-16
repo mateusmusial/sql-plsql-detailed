@@ -27,7 +27,7 @@ declare
    l_employee_id employees.employee_id%type := 210;
    l_salary      employees.salary%type;
 begin
-   l_salary := search_emp_salary(l_employee_id);
+   l_salary := get_emp_salary(l_employee_id);
 
    dbms_output.put_line('Salário: ' || l_salary);
 end;
