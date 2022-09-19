@@ -2,12 +2,22 @@
 
 create or replace procedure search_employee(
    in_employee_id in  employees.employee_id%type
- , out_employee   out employees%rowtype
+ , out_r_employee out employees%rowtype
 ) is
 -- variáveis
 begin
-   select *
-     into out_employee
+   select employee_id
+        , first_name
+        , last_name
+        , email
+        , phone_number
+        , hire_date
+        , job_id
+        , salary
+        , commission_pct
+        , manager_id
+        , department_id
+     into out_r_employee
      from employees
     where employee_id = in_employee_id;
 exception

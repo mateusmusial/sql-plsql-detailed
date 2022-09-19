@@ -74,7 +74,7 @@ create or replace package body employees_api is
 
    procedure search_employee(
       in_employee_id in  employees.employee_id%type
-    , out_employee   out employees%rowtype
+    , out_r_employee out employees%rowtype
    ) is
    -- variáveis
    begin
@@ -89,7 +89,7 @@ create or replace package body employees_api is
            , commission_pct
            , manager_id
            , department_id
-        into out_employee
+        into out_r_employee
         from employees
        where employee_id = in_employee_id;
    exception

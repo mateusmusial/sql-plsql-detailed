@@ -24,7 +24,7 @@ create or replace package employees_api is
 
    procedure search_employee(
       in_employee_id in  employees.employee_id%type
-    , out_employee   out employees%rowtype
+    , out_r_employee out employees%rowtype
    );
 
    function get_emp_salary(in_employee_id in number)
