@@ -1,6 +1,6 @@
 -- Collection Associative Array de Records
 --
--- Array Bidimensional que permite carregar toda uma tabela para o array.
+-- Array Unidimensional que permite carregar toda uma tabela para o array.
 
 set serveroutput on;
 set verify off;
