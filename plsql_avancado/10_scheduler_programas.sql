@@ -27,21 +27,24 @@ end;
 
 begin
    dbms_scheduler.create_program(
-      program_name        => 'hr.inserir_data'
-    , program_action      => 'hr.insert_date'
+      program_name        => 'prg_inserir_data_agenda'
+    , program_action      => 'insert_date'
     , program_type        => 'stored_procedure'
     , number_of_arguments => 0
-    , comments            => 'Insere dados na agenda'
+    , comments            => 'Insere dados na tabela agenda'
     , enabled             => true
    );
+end;
 
-   -- Podemos ativar o scheduler depois de criado.
-   dbms_scheduler.enable(name => 'hr.inserir_data');
+-- Podemos ativar o scheduler depois de criado.
+begin
+   dbms_scheduler.enable(name => 'prg_inserir_data_agenda');
+end;
 
-   -- Para remover o scheduler
+-- Para remover o scheduler
+begin
    dbms_scheduler.drop_program(
-      program_name => 'hr.inserir_data'
+      program_name => 'prg_inserir_data_agenda'
     , force        => true
    );
-
 end;
