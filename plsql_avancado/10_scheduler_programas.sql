@@ -36,7 +36,7 @@ begin
    );
 end;
 
--- Podemos ativar o scheduler depois de criado.
+-- Podemos ativar o programa depois de criado.
 begin
    dbms_scheduler.enable(name => 'prg_inserir_data_agenda');
 end;
