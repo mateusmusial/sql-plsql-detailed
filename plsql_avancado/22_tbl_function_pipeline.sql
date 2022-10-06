@@ -21,7 +21,6 @@ is
            , department_id
         from employees
        where department_id = p_department_id;
-
 begin
    for employee in c_employees(in_department_id)
    loop
@@ -42,7 +41,6 @@ begin
       );
    end loop;
 end;
-
 
 -- Utilizando a Pipelined Function
 select *

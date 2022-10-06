@@ -4,7 +4,6 @@
 -- e é controlado diretamente pelo programador
 
 -- Controlando o Cursor Explícito com Loop Básico
-
 set serveroutput on;
 set verify off;
 
@@ -41,7 +40,6 @@ begin
 end;
 
 -- Controlando um Cursor Explícito com While Loop
-
 declare
    cursor c_employees is
       select *

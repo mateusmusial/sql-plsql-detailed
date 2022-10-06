@@ -15,7 +15,7 @@ begin
      from employees
     order by employee_id;
 
-    dbms_output.put_line('Número de elementos: ' || t_employees.count);
+   dbms_output.put_line('Número de elementos: ' || t_employees.count);
 
    <<imprime_valores>>
    for i in t_employees.first..t_employees.last

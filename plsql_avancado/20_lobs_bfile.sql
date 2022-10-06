@@ -7,7 +7,6 @@ declare
    l_diretorio      varchar2(100) := 'IMAGENS';
    l_arquivo_origem bfile;
 begin
-
    l_arquivo_origem := bfilename(l_diretorio, l_nome_arquivo);
 
    if dbms_lob.fileexists(l_arquivo_origem) = 1 then
@@ -23,7 +22,6 @@ begin
        , l_arquivo_origem);
       commit;
    end if;
-
 exception
    when others then
       raise_application_error(-20001, 'Erro Oracle ' || sqlcode || sqlerrm);

@@ -45,5 +45,4 @@ begin
    dbms_output.put_line('Número inteiro: ' || l_inteiro);
    dbms_output.put_line('Número float: ' || l_float);
    dbms_output.put_line('Número double: ' || l_double);
-
 end;
