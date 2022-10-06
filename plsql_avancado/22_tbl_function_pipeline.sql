@@ -4,7 +4,7 @@
 -- isso faz com que economizamos memória não precisando criar grande collentions
 
 create or replace function get_employees_table_pipeline(in_department_id in employees.department_id%type)
-   return employees_table
+   return t_employees_type
    pipelined
 is
    cursor c_employees(p_department_id employees.department_id%type) is
@@ -25,7 +25,7 @@ begin
    for employee in c_employees(in_department_id)
    loop
       pipe row(
-         employee_row( -- Types criado anteriormente
+         r_employee( -- Types criado anteriormente
             employee.employee_id
           , employee.first_name
           , employee.last_name

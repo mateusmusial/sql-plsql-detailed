@@ -8,7 +8,7 @@ set verify off; -- Desativa a exibição do cod. fonte na saída.
 accept g_employee_id prompt 'Digite o ID do empregado: ';
 
 declare
-   type r_employee_type is record(
+   type r_employee_type is record (
          employee_id  employees.employee_id%type
        , first_name   employees.first_name%type
        , last_name    employees.last_name%type
