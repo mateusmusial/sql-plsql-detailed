@@ -27,3 +27,14 @@ show errors package name_package;
 `user_dependencies` - Dependências de objetos do usuário;
 `all_dependencies` - Dependências de objetos que o usuário tem permissão;
 `dba_dependencies` - Dependências de todos os objetos do banco (apenas DBA).
+
+## Tipos de Variáveis
+
+(1) `:`          : Usado para substituir uma variável permanentemente em uma sessão
+(2) `&`          : Usado para substituir uma variável temporariamente em uma sessão
+(3) `&&`         : Usado para substituir uma variável permanentemente em uma sessão
+(4) `DEFINE`     : Usado para definir uma variável
+(5) `UNDEFINE`   : Usado para indefinir uma variável
+(6) `ACCEPT`     : Usado para declarar e aceitar o valor de uma variável permanentemente
+(7) `PROMPT`     : Usado para solicitar um valor e também usado com o comando ACCEPT para solicitar um texto
+(8) `VARIABLE`   : Usado para declarar uma variável e pode ser usado com o operador ':' para substituir uma variável
