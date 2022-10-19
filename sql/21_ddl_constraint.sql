@@ -24,6 +24,10 @@ create table projects (
 -- Adicionando uma Constraint a uma Tabela
 
 -- Default NO ACTION, ON DELETE CASCADE, ON DELETE SET NULL
+-- ON DELETE CASCADE: se uma linha no pai for excluída,
+-- todas as linhas na tabela filha que fizerem referência à linha removida serão excluídas.
+-- ON DELETE SET NULL: se uma linha no pai for excluída, todas as linhas na tabela filha que referenciavam
+-- a linha removida serão definidas como NULL para as colunas de  foreign key.
 alter table projects
    add constraint projects_department_id_fk foreign key (department_id)
       references departments (department_id) on delete cascade;
