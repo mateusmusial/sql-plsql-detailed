@@ -26,7 +26,7 @@ create table projects (
 -- Default NO ACTION, ON DELETE CASCADE, ON DELETE SET NULL
 alter table projects
    add constraint projects_department_id_fk foreign key (department_id)
-      references departments(department_id) on delete cascade;
+      references departments (department_id) on delete cascade;
 
 alter table projects
    add constraint projects_project_id_pk primary key (project_id);
