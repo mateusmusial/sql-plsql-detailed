@@ -37,3 +37,8 @@
 `TIMESTAMP` - Data com 9 digitos decimais de segundo
 `INTERVAL YEAR TO MONTH` - Intervalo de anos e meses
 `INTERVAL DAY TO SECOND` - Intervalo de dias, horas, minutos, segundos
+
+
+## Sequences
+
+`user_sequences` - Sequências do usuário

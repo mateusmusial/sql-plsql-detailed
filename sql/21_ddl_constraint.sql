@@ -39,6 +39,7 @@ alter table projects
 alter table projects
    drop constraint projects_department_id_fk;
 
+-- Removendo uma constraint que já possuem referências
 alter table projects
    drop constraint projects_project_id_pk cascade;
 
@@ -46,6 +47,7 @@ alter table projects
 alter table projects
    disable constraint projects_department_id_fk;
 
+-- Desabilitando contraints que já possuem referências
 alter table projects
    disable constraint projects_project_id_pk cascade;
 
