@@ -51,5 +51,6 @@ select sysdate "Data atual"
      , round(to_date('16/07/22'), 'year') "Arredonda > 7, começo prox ano"
      , trunc(sysdate, 'month') "Começo mês atual"
      , trunc(sysdate, 'year') "Começo ano atual"
+     , to_char(trunc(sysdate) + 0.99999,'dd/mm/yyyy hh24:mi:ss') "Final do dia"
      , to_char(trunc(sysdate),'dd/mm/yy hh24:mi:ss') "Começo do dia"
   from dual;

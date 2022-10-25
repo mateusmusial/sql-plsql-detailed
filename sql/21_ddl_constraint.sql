@@ -59,9 +59,6 @@ alter table projects
    enable constraint projects_project_id_pk;
 
 -- Consultando Constraints pelo Dicionário de Dados
-desc user_constraints;
-desc user_cons_columns;
-
 select co.constraint_name
      , co.constraint_type
      , co.search_condition

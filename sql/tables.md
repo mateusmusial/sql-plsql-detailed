@@ -42,3 +42,16 @@
 ## Sequences
 
 `user_sequences` - Sequências do usuário
+
+## Índices e Constraints
+
+`user_indexes` - Índices da tabela do usuário;
+`user_ind_columns` - Colunas que contém os índices criados pelo usuário.
+
+`user_constraints` - Constraints das tabelas do usuário;
+`user_cons_columns` - Colunas que contém contraints das tabelas do usuário.
+
+
+## Visões do Dicionário de Dado
+
+`dictionary` - Tabela que contém todas as visões do dicionário de dados do Oracle.

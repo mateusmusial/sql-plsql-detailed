@@ -5,6 +5,7 @@ select to_char(sysdate, 'dd/mm/yyyy  hh24:mi:ss') "Data e hora"
      , to_char(systimestamp, 'dd/mm/yyyy  hh24:mi:ss tzh') "Data e hora com time zone"
      , to_char(sysdate, 'dd, "de" Month "de" yyyy') "Data extenso com 9 caracter"
      , to_char(sysdate, 'fmdd, "de" Month "de" yyyy') "Data extenso sem espaços"
+     , to_char(trunc(sysdate) + 0.99999,'dd/mm/yyyy hh24:mi:ss') "Final do dia"
   from dual;
 
 -- Utilizando a função TO_CHAR com NUMBER
